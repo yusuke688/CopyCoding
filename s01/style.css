@@ -1,0 +1,45 @@
+body {
+    font: inherit;
+    font-size: 100%;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.sub-header, .main-header {
+    height: 53px;
+    padding: 15px;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.site-title {
+    font-size:13px;
+    width: 55%;
+}
+
+.sub-menu {
+    width: 35%;
+    margin-right: 2%;
+}
+
+.sub-menu > ul {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #7e7e7e;
+}
+
+.sub-menu > ul > li {
+}
+
+.sns-link {
+    width: 8%;
+}
+
+
+.sns-li {
+    width: 33%;
+    height: 15px;
+    text-align: center;
+}
