@@ -8,7 +8,7 @@ body {
     flex-direction: row;
 }
 
-.sub-header, .main-header {
+.sub-header {
     height: 53px;
     padding: 15px;
     border-bottom: 1px solid #d4d4d4;
@@ -37,9 +37,69 @@ body {
     width: 8%;
 }
 
-
 .sns-li {
     width: 33%;
     height: 15px;
     text-align: center;
+}
+
+.main-header {
+    height: 77px;
+    padding: 0 0 0 2%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.main-menu {
+    align-items: center;
+    height: 100%;
+}
+.main-menu > ul {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.main-menu > ul > li {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.main-menu > ul > li > a {
+    height: 100%;
+    padding:0 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+.contact-nav {
+    background-color: #FCFC38;
+    display: block;
+    padding: 0 25px !important;
+    transition: 0.3s ease-out;
+}
+
+.contact-nav:hover {
+    color: white;
+    background-color: black;
+}
+
+
+
+@media screen and (min-width: 900px) {
+    .contact-nav::after {
+        content: '';
+        width: 10px;
+        height: 10px;
+        border: 1px solid #000000;
+        border-width: 0 1px 1px 0;
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        display: block;
+        z-index: 1000;
+    }
 }
