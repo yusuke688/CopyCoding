@@ -171,6 +171,35 @@ body {
     border-left: 3px solid #C7B368;
 }
 
+.mission {
+    margin: 0 auto;
+    max-width: 1440px;
+    position: relative;
+    padding: 160px 0;
+}
+
+.mission-inner {
+    margin: 0 auto;
+    box-sizing: content-box;
+    max-width: 1104px;
+}
+
+.mission-body {
+    margin: 0 0 0 auto;
+    width: 50%;
+}
+
+.section-heading > span {
+    display: block;
+}
+
+.mission-img {
+    position: absolute;
+    left: 0;
+    top: 156px;
+    width: clamp(400px, 38vw, 575px);
+}
+
 @media screen and (min-width: 900px) {
     .contact-nav::after {
         content: '';
