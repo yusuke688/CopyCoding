@@ -189,11 +189,11 @@ body {
     width: 50%;
 }
 
-.section-heading > span {
+.section-heading-mission > span {
     display: block;
 }
 
-.section-heading-en {
+.section-heading-mission-en {
     font-size: clamp(28px, 4.1666666667vw, 60px);
     font-weight: 600;
     text-align: center;
@@ -202,7 +202,7 @@ body {
     margin: 0 0 12px;
 }
 
-.section-heading-ja {
+.section-heading-mission-ja {
     font-size: clamp(12px, 0.9027777778vw, 13px);
     text-align: center;
     letter-spacing: 0.1em;
@@ -211,7 +211,7 @@ body {
     position: relative;
 }
 
-.section-heading-ja::before {
+.section-heading-mission-ja::before {
     content: "";
     height: 38px;
     width: 60px;
@@ -224,14 +224,14 @@ body {
     z-index: -1;
 }
 
-.section-subheading {
+.section-subheading-mission {
     font-size: clamp(22px, 2.7777777778vw, 40px);
     font-weight: bold;
     line-height: 1.5;
     margin: 70px 0 48px;
 }
 
-.section-desc p:not(:last-child) {
+.section-desc-mission p:not(:last-child) {
     margin-bottom: 1.86em;
 }
 
@@ -240,6 +240,65 @@ body {
     left: 0;
     top: 156px;
     width: clamp(400px, 38vw, 575px);
+}
+
+/* About */
+.about {
+    background: transparent url(./img/about_bg.jpg) no-repeat center center/cover;
+    padding: 79px 0 113px 0;
+}
+.abount-inner{
+    margin: 0 auto;
+    width: 1104px;
+    padding: 0 48px;
+    color: #fff;
+}
+.section-heading-about{
+    text-align: center;
+}
+.section-subheading-about{
+    font-size: clamp(20px, 2.0833333333vw, 30px);
+    font-weight: bold;
+    line-height: 1.6666666667;
+    margin: 24px 0 24px;
+    text-align: center;
+}
+.section-subheading-about-small {
+    display: block;
+}
+.section-subheading-about-large {
+    display: block;
+}
+@media screen and (min-width: 768px) {
+  .subheading-br-point {
+    display: none !important;
+    width: 0;
+  }
+}
+
+.section-heading-about-en{
+    display: block;
+    font-family: azo-sans-web, sans-serif;
+    font-size: clamp(28px, 4.1666666667vw, 60px);
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    line-height: 1.269;
+    margin: 0 0 12px;
+}
+.section-heading-about-ja{
+    display: block;
+    font-family: azo-sans-web, sans-serif;
+    font-size: clamp(12px, 0.9027777778vw, 13px);
+    font-weight: 400;
+    letter-spacing: 0.3em;
+    line-height: 1.2692307692;
+}
+.section-desc-about{
+    max-width: 680px;
+    margin: 0 auto;
+}
+.section-desc-about p:not(:last-child) {
+    margin: 0 0 1.86em;
 }
 
 @media screen and (min-width: 900px) {
